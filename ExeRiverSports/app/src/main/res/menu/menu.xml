@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This is the properties for the 'Home' button in the navigation bar -->
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <!-- This is the properties for the 'Profile' button in the navigation bar -->
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"/>
+
+    <!-- This is the properties for the 'Events' button in the navigation bar -->
+    <item
+        android:id="@+id/Events"
+        android:title="Events"
+        android:icon="@drawable/ic_event"/>
+
+    <!-- This is the properties for the 'About' button in the navigation bar -->
+    <item
+        android:id="@+id/About"
+        android:title="About Us"
+        android:icon="@drawable/ic_about"/>
+
+    <!-- This is the properties for the 'Weather' button in the navigation bar -->
+    <item
+        android:id="@+id/Weather"
+        android:title="Weather"
+        android:icon="@drawable/ic_weather"/>
+</menu>

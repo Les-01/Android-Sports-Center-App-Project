@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  This sets the colour of the selected Nav bar button to white  -->
+    <item
+        android:state_selected="true"
+        android:drawable="@color/purple_500"
+        android:color="@android:color/white"/>
+
+    <item
+        android:state_selected="false"
+        android:drawable="@android:color/black"
+        android:color="@android:color/white"/>
+</selector>

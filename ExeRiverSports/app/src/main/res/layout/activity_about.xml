@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <!--  This is the About page Header. The text size, style and colour are set  -->
+    <TextView
+        android:id="@+id/about_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!--  This is a brief description about Exe River Sports  -->
+    <TextView
+        android:id="@+id/about_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We are Exe River Sports a local sports center at the heart of our community. We host a variety of different sporting events throughout the year. New members are always welcome."
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/about_header"
+        android:padding="15sp"/>
+
+    <!--  This is a mail to link that on click takes the user directly to the devices email application with the send to address already in place  -->
+    <TextView
+        android:id="@+id/about_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/about_desc"
+        android:layout_marginStart="15sp"
+        android:textColorLink="@color/purple_500"/>
+
+    <!--  This is an image of people playing various sports  -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/about_img"
+        android:layout_above="@+id/bottom_navigator"
+        android:contentDescription="About_Image" />
+
+    <!--  This is the bottom navigation bar  -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/purple_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

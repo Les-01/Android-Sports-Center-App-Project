@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rugby_TicketsActivity">
+
+    <!--  This is the Rugby tickets page Header. The text size, style and colour are set  -->
+    <TextView
+        android:id="@+id/rugby_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rugby Tickets"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!--  This is the TextView that displays the current match that the tickets are for  -->
+    <TextView
+        android:id="@+id/match1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exeter Chiefs vs Bristol Bears Thursday 16th at 10am"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/rugby_header"/>
+
+    <!--  This is the TextView that instructs the user to select a ticket type  -->
+    <TextView
+        android:id="@+id/ticket_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Ticket Type"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/match1"/>
+
+    <!--  This is the Adult Ticket Button  -->
+    <Button
+        android:id="@+id/btn_adult_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_type"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Adult\nTicket" />
+
+    <!--  This is the Child Ticket Button  -->
+    <Button
+        android:id="@+id/btn_child_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Child\nTicket" />
+
+    <!--  This is the Member Ticket Button  -->
+    <Button
+        android:id="@+id/btn_member_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_type"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Member\nTicket" />
+
+    <!--  This is the TextView that instructs the user to select a ticket section  -->
+    <TextView
+        android:id="@+id/ticket_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Ticket Section"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/btn_child_ticket"/>
+
+    <!--  This is the Front Row Ticket Button  -->
+    <Button
+        android:id="@+id/btn_front_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_section"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Front Row\nSection" />
+
+    <!--  This is the Middle Row Ticket Button  -->
+    <Button
+        android:id="@+id/btn_middle_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_section"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Middle Row\nSection" />
+
+    <!--  This is the Back Row Ticket Button  -->
+    <Button
+        android:id="@+id/btn_back_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_section"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Back Row\nSection" />
+
+    <!--  This is the TextView that instructs the user to select ticket addons  -->
+    <TextView
+        android:id="@+id/ticket_add_ons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_middle_row"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Select Ticket Add Ons"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <!--  This is the Meal Deal Ticket Button  -->
+    <Button
+        android:id="@+id/btn_meal_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_add_ons"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Meal\nDeal" />
+
+    <!--  This is the VIP access Ticket Button  -->
+    <Button
+        android:id="@+id/btn_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_add_ons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="VIP\nAccess" />
+
+    <!--  This is the grounds tour Ticket Button  -->
+    <Button
+        android:id="@+id/btn_tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticket_add_ons"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Grounds\nTour" />
+
+    <!--  This is the buy Ticket Button  -->
+    <Button
+        android:id="@+id/btn_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_vip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:text="Buy\nTicket" />
+
+    <!--  This is the TextView that acts as the first part of the receipt. It displays all the ticket information except for the price.  -->
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/btn_purchase"/>
+
+    <!--  This is the TextView that acts as the second part of the receipt. It displays the total price for the ticket, row and any addons.  -->
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/desc"/>
+
+    <!--  This is the bottom navigation bar  -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/purple_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
